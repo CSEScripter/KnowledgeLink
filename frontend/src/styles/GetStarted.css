@@ -1,0 +1,120 @@
+/* src/pages/GetStarted.css */
+
+.get-started-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e0f7fa, #c8e6c9);
+  padding: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  background: #ffffff;
+  padding: 3rem 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(198, 30, 220, 0.15);
+}
+
+.logo {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  margin: 0 auto 1.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1b3a57;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #555555;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 0.8rem 1.8rem;
+  border-radius: 8px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #1b3a57;
+  color: #ffffff;
+  border: 2px solid #1b3a57;
+}
+
+.btn-primary:hover {
+  background-color: #ffffff;
+  color: #1b3a57;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #1b3a57;
+  border: 2px solid #1b3a57;
+}
+
+.btn-secondary:hover {
+  background-color: #1b3a57;
+  color: #ffffff;
+}
+
+.loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: #1b3a57;
+}
+
+@media (max-width: 640px) {
+  .card {
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .btn-primary, .btn-secondary {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+}
